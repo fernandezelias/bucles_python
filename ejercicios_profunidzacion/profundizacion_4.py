@@ -65,3 +65,36 @@ Alumno:
 
 print("Mi Calculadora (^_^)")
 # Empezar aquí la resolución del ejercicio
+
+while True:
+    numero_1 = float(input("Ingrese el primer número decimal:\n"))
+    numero_2 = float(input("Ingrese el segundo número decimal:\n"))
+    print("Ingrese qué operación desea realizar:")
+    print("1- Suma (+)")
+    print("2- Resta (-)")
+    print("3- Multiplicación (*)")
+    print("4- División (/)")
+    print("5- SALIR")
+    operacion = str(input())
+
+    if operacion == "1" or operacion == "2" or operacion == "3" or operacion == "4" or operacion == "5":
+        break
+    else:
+        print("Opción incorrecta. Por favor, vuelva a intentarlo.")
+        
+if operacion == "1":
+    resultado = numero_1 + numero_2
+    print(f"El resultado de la operación es {resultado}")
+elif operacion == "2":
+    resultado = numero_1 - numero_2
+    print(f"El resultado de la operación es {resultado}")
+elif operacion == "3":
+    resultado = numero_1 * numero_2
+    print(f"El resultado de la operación es {resultado}")
+elif operacion == "4":
+    resultado = numero_1 / numero_2
+    print(f"El resultado de la operación es {resultado}")
+elif operacion == "5":
+    print("¡Hasta luego!")
+        
+print("¡Muchas gracias por utilizar Mi Calculadora (^_^)!")
