@@ -32,6 +32,14 @@
 # Cada temperatura deberá almacenarse
 # como un valor decimal (utilice float con el input)
 
+temperaturas = []
+
+for i in range(5):
+    temperatura = float(input("Ingrese una temperatura:\n"))
+    temperaturas.append(temperatura)
+
+
+print(temperaturas)
 
 # Imprimir en pantalla la variable temperaturas
 # Deberá observar sus 5 temperaturas ingresadas
